@@ -1,6 +1,7 @@
-a{
+a {
     text-decoration: none;
 }
+
 .header {
     height: 100px;
     display: flex;
@@ -14,15 +15,54 @@ a{
         &_img {
             margin-left: 32px;
         }
-        &__img-next{
+
+        &_img-next {
             height: 6px;
             width: 8px;
             margin-left: 8px;
         }
     }
-    &__logo_text{
+
+    &__logo_text {
         margin-left: 12px;
         font-size: 14px;
         color: #000000;
+    }
+
+    &__button_first {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 245px;
+        padding: 10px 20px 14px;
+        background: #1E3173;
+        border-radius: 24px;
+        font-weight: 600;
+        font-size: 18px;
+        color: #FFFFFF;
+    }
+    &__button_last{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px 14px;
+        border: #1E3173 1px solid ;
+        border-radius: 24px;
+        font-weight: 600;
+        font-size: 18px;
+        color: #1E3173;
+        width: 180px;
+        margin-left: 20px;
+    }
+    &__img-last{
+        margin-left: 34px;
+        height: 16px;
+        width: 12px;
+    }
+    &__text{
+        font-weight: 600;
+        font-size: 18px;
+        color: #000000;
+        margin-left: 18px;
     }
 }
