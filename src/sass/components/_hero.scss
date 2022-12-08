@@ -36,6 +36,7 @@
         color: #000;
         margin-top: 54px;
     }
+
     &__btn-next {
         background: #FFFFFF;
         border-radius: 32px;
@@ -48,16 +49,18 @@
         color: #000;
         margin-top: 54px;
     }
-    &__btn-next__img{
+
+    &__btn-next__img {
         margin-right: 18px;
     }
-    &__btn-last{
+
+    &__btn-last {
         background: #1E3173;
-border-radius: 32px;
-padding: 20px 0px;
-font-weight: 600;
-font-size: 26px;
-color: #FFFFFF;
-margin-top: 54px;
+        border-radius: 32px;
+        padding: 20px 0px;
+        font-weight: 600;
+        font-size: 26px;
+        color: #FFFFFF;
+        margin-top: 54px;
     }
 }

@@ -9,5 +9,9 @@
 
 @import "components/header";
 @import "components/hero";
+@import "components/info";
 @import "components/footer";
 
+body{
+    font-family: 'Raleway', sans-serif;
+}
