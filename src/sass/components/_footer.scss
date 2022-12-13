@@ -1,5 +1,25 @@
-.footer{
+.footer {
     margin-top: 120px;
     background-color: #000000;
     padding: 42px 0px 50px;
+
+    &__menu {
+        ul {
+
+            li {
+                list-style: none;
+                padding: 0px 21px;
+            }
+
+            a {
+                font-weight: 400;
+                font-size: 16px;
+                color: #FFFFFF;
+
+            }
+            :last-child {
+                padding-right: 0;
+            }
+        }
+    }
 }
