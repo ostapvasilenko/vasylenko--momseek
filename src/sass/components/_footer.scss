@@ -30,12 +30,14 @@
         color: #FFFFFF;
         margin-top: 14px;
         order: 1;
+        flex: 1;
     }
 
     &__info {
         display: flex;
         align-items: center;
         justify-content: end;
+        flex: 2;
         order: 2;
 
         &_text {
@@ -72,12 +74,14 @@
             margin: 0 auto;
         }
         &__text {
+            flex: 1;
             order: 2;
             display: flex;
             justify-content: center;
             margin: 0;
         }
         &__info{
+            flex: 2;
             order: 1;
             display: flex;
             justify-content: center;
