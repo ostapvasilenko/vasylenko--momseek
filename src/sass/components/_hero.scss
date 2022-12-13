@@ -63,4 +63,44 @@
         color: #FFFFFF;
         margin-top: 54px;
     }
+    @media screen and (max-width: 1400px) {
+        &{
+            height: 510px;
+        }
+        &__subtitle{
+            margin-top: 0px;
+        }
+    }
+    @media screen and (max-width: 992px) {
+        &{
+            height: 645px;
+        }
+        &__img{
+            display: none;
+        }
+        &__btn-first{
+            margin-top: 35px;
+        }
+        &__btn-next{
+            margin-top: 15px;
+        }
+        &__btn-last{
+            margin-top: 15px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        &{
+            height: 530px;
+        }
+        &__title {
+            font-weight: 700;
+            font-size: 32px;
+            margin-top: 100px;
+        }
+    
+        &__subtitle {
+            font-weight: 500;
+            font-size: 18px;
+        }
+    }
 }
