@@ -10,69 +10,64 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 37px 42px;
 
     &__subtitle {
-        position: absolute;
+        margin-left: 10px;
         font-weight: 700;
         font-size: 22px;
         color: #FFFFFF;
     }
 
     &__title {
-        position: absolute;
+
         font-weight: 800;
         font-size: 64px;
         color: #FFFFFF;
-        margin-top: 58px;
+        margin-top: 28px;
     }
 
-    &__item {
+    &__items {
         display: flex;
+        margin-top: 135px;
+        width: 94%;
 
-        &_first {
-            position: absolute;
-            padding: 18px 33px 22px 22px;
+        :first-child {
+            margin-right: 19px;
+        }
+
+        :nth-child(2) {
+            margin: 0px 19px;
+        }
+
+        :last-child {
+            margin-left: 19px;
+        }
+
+        &_item {
             background: #1E3173;
             border-radius: 12px;
+            height: 140px;
+            padding: 18px 20px 22px 22px;
             color: #FFFFFF;
-            transition: 0.5s all;
 
             &-title {
                 font-weight: 800;
                 font-size: 24px;
-                margin-bottom: 18px;
+                margin: 0 !important;
             }
 
             &-subtitle {
                 font-weight: 400;
                 font-size: 16px;
+                margin: 18px 0 0 0 !important;
             }
 
             &-img {
-                position: absolute;
-                margin-left: 85%;
-                background-image: url('../img/Vectorinfo.png');
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
+                height: 14px;
+                width: 14px;
+                margin: 0 !important;
             }
         }
 
-        :hover {
-            background: #FFFFFF;
-            color: #1E3173;
-            transition: 0.5s all;
-        }
     }
 }
-
-// :hover{
-//     position: absolute;
-//     margin-left: 85%;
-//     background-image: url('../img/Vectorinfo1.png');
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-
-// }
