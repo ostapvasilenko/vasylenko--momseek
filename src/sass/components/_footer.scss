@@ -25,19 +25,20 @@
     }
 
     &__text {
+        display: flex;
+        flex-wrap: wrap;
         font-weight: 400;
         font-size: 16px;
         color: #FFFFFF;
         margin-top: 14px;
         order: 1;
-        flex: 1;
     }
 
     &__info {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         justify-content: end;
-        flex: 2;
         order: 2;
 
         &_text {
@@ -56,36 +57,42 @@
             }
         }
     }
+
     @media screen and (max-width: 996px) {
         ul {
             display: block;
         }
-        li{
+
+        li {
             padding: 16px 0px;
             text-align: center;
         }
-        &__logo{
+
+        &__logo {
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0px 0px 8px;
         }
-        &__menu{
+
+        &__menu {
             margin: 0 auto;
         }
+
         &__text {
-            flex: 1;
             order: 2;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             margin: 0;
         }
-        &__info{
-            flex: 2;
+
+        &__info {
             order: 1;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
+            margin-top: -15px;
         }
-        
     }
 }
