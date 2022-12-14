@@ -31,6 +31,12 @@
         margin-top: 135px;
         width: 94%;
 
+        :hover{
+            background: #FFFFFF;
+            color: #1E3173;
+            transition: 0.5s all;
+        }
+
         :first-child {
             margin-right: 19px;
         }
@@ -49,6 +55,7 @@
             height: 140px;
             padding: 18px 20px 22px 22px;
             color: #FFFFFF;
+            transition: 0.8s all;
 
             &-title {
                 font-weight: 800;
@@ -66,6 +73,12 @@
                 height: 14px;
                 width: 14px;
                 margin: 0 !important;
+
+                :hover{
+                    background-image: url('../img/Vectorinfo1.png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
             }
         }
 
