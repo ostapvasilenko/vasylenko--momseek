@@ -31,7 +31,7 @@
         margin-top: 135px;
         width: 94%;
 
-        :hover{
+        :hover {
             background: #FFFFFF;
             color: #1E3173;
             transition: 0.5s all;
@@ -61,6 +61,13 @@
                 font-weight: 800;
                 font-size: 24px;
                 margin: 0 !important;
+
+                @media screen and(max-width:1400px) {
+                    font-size: 20px;
+                }
+                @media screen and(max-width:1200px) {
+                    font-size: 16px;
+                }
             }
 
             &-subtitle {
@@ -74,10 +81,86 @@
                 width: 14px;
                 margin: 0 !important;
 
-                :hover{
+                :hover {
                     background-image: url('../img/Vectorinfo1.png');
                     background-position: center;
                     background-repeat: no-repeat;
+                }
+            }
+        }
+
+    }
+
+    @media screen and(max-width:1400px) {
+        &__title {
+            font-size: 44px;
+        }
+        &__items{
+            margin-top: 170px;
+        }
+    }
+    @media screen and(max-width:1200px) {
+        &__items{
+            width: 92%;
+        }
+    }
+
+    @media screen and(max-width:992px) {
+        &__title {
+            font-size: 36px;
+        }
+        &__items{
+            margin-top: 155px;
+            width: 90%;
+
+            &_item{
+                height: 180px;
+            }
+        }
+    }
+    @media screen and(max-width:767px) {
+        &{
+            background: #1E3173;
+            width: 100%;
+            height: 765px;
+            border-radius: 12px;
+            margin-top: -40px;
+            padding-top: 16px;
+            &__title{
+                margin-top: 18px;
+            }
+            &__subtitle{
+                margin: 0;
+            }
+
+            &__items{
+                display:flex;
+                flex-direction: column;
+                margin-top: 38px;
+                width: 100%;
+
+                :first-child {
+                    margin-right: 0px;
+                    margin-bottom: 10px;
+                }
+                :nth-child(2) {
+                    margin: 0px 0px 10px;
+                }
+        
+                :last-child {
+                    margin-left: 0px;
+                }
+
+                &_item{
+                    background: #FFFFFF;
+                    color: #1E3173;
+
+                    &-title{
+                    font-size: 20px;
+                    }
+                    &-subtitle{
+                        font-size: 14px;
+                    }
                 }
             }
         }
