@@ -23,6 +23,7 @@
         color: #FFFFFF;
         margin-left: 0;
     }
+
     &__items {
         display: flex;
         margin-top: 110px;
@@ -82,6 +83,7 @@
         }
 
     }
+
     @media screen and(max-width:1400px) {
         &__title {
             font-size: 44px;
@@ -117,17 +119,19 @@
 
         & {
             background: #172555;
-            height: 555px;
+            height: 600px;
             border-radius: 12px;
             margin-top: 750px;
-            padding: 0;
+            padding: 0px 25px;
 
             &__title {
                 margin-top: 18px;
+                font-size: 34px;
             }
 
             &__subtitle {
                 margin: -100px 0 0 0;
+                padding-top: 18px;
             }
 
             &__items {
@@ -137,9 +141,8 @@
                 width: 100%;
 
                 :hover {
-                    background: #774FA4;
-                    color: #FFFFFF;
-                    ;
+                    background: #FFD8B2;
+                    color: #000000;
                     transition: 0.5s all;
                 }
 
@@ -158,7 +161,7 @@
 
                 &_item {
                     background: #FFFFFF;
-                    color: #1E3173;
+                    color: #000000;
                     height: 130px;
 
                     &-title {
@@ -172,5 +175,11 @@
             }
         }
 
+    }
+
+    @media screen and(max-width:536px) {
+        & {
+            height: 640px;
+        }
     }
 }
