@@ -65,6 +65,7 @@
                 @media screen and(max-width:1400px) {
                     font-size: 20px;
                 }
+
                 @media screen and(max-width:1200px) {
                     font-size: 16px;
                 }
@@ -80,12 +81,6 @@
                 height: 14px;
                 width: 14px;
                 margin: 0 !important;
-
-                :hover {
-                    background-image: url('../img/Vectorinfo1.png');
-                    background-position: center;
-                    background-repeat: no-repeat;
-                }
             }
         }
 
@@ -95,12 +90,14 @@
         &__title {
             font-size: 44px;
         }
-        &__items{
+
+        &__items {
             margin-top: 170px;
         }
     }
+
     @media screen and(max-width:1200px) {
-        &__items{
+        &__items {
             width: 92%;
         }
     }
@@ -109,61 +106,89 @@
         &__title {
             font-size: 36px;
         }
-        &__items{
+
+        &__items {
             margin-top: 155px;
             width: 90%;
 
-            &_item{
+            &_item {
                 height: 180px;
             }
         }
     }
+
     @media screen and(max-width:767px) {
-        &{
+
+        & {
             background: #1E3173;
-            width: 100%;
-            height: 765px;
+            height: 555px;
             border-radius: 12px;
             margin-top: -40px;
-            padding-top: 16px;
-            &__title{
+            padding: 0;
+
+            &__title {
                 margin-top: 18px;
             }
-            &__subtitle{
-                margin: 0;
+
+            &__subtitle {
+                margin: -100px 0 0 0;
             }
 
-            &__items{
-                display:flex;
+            &__items {
+                display: flex;
                 flex-direction: column;
                 margin-top: 38px;
                 width: 100%;
+
+                :hover {
+                    background: #774FA4;
+                    color: #FFFFFF;;
+                    transition: 0.5s all;
+                }
 
                 :first-child {
                     margin-right: 0px;
                     margin-bottom: 10px;
                 }
+
                 :nth-child(2) {
                     margin: 0px 0px 10px;
                 }
-        
+
                 :last-child {
                     margin-left: 0px;
                 }
 
-                &_item{
+                &_item {
                     background: #FFFFFF;
                     color: #1E3173;
+                    height: 130px;
 
-                    &-title{
-                    font-size: 20px;
+                    &-title {
+                        font-size: 20px;
                     }
-                    &-subtitle{
+
+                    &-subtitle {
                         font-size: 14px;
                     }
                 }
             }
         }
 
+    }
+}
+
+@media screen and(max-width:767px) {
+    .size {
+        background-color: #1E3173;
+        margin-top: 80px;
+        height: 580px;
+        border-radius: 12px;
+    }
+}
+
+@media screen and(max-width:487px) {
+    .size {
+        height: 605px;
     }
 }
