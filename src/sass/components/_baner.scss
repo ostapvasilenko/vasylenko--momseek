@@ -1,0 +1,28 @@
+.baner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+
+    &__rect {
+        margin-top: 600px;
+        width: 698px;
+        height: 698px;
+        border-radius: 50%;
+        background: #1E3173;
+        z-index: 999;
+    }
+
+    &__img {
+        height: 538px;
+        background-image: url('../img/banerimg.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: -700px;
+        width: 100%;
+        margin-left: 438px;
+        z-index: 1;
+    }
+}
