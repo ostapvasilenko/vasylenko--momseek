@@ -1,28 +1,176 @@
 .baner {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    background-image: url('../img/banerimg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    overflow: hidden;
+    height: 515px;
+    margin-top: 600px;
+    border-radius: 12px;
+    padding: 40px 40px 20px;
 
-    &__rect {
-        margin-top: 600px;
-        width: 698px;
-        height: 698px;
-        border-radius: 50%;
-        background: #1E3173;
-        z-index: 999;
+    &__subtitle {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 100%;
+        color: #FFFFFF;
     }
 
-    &__img {
-        height: 538px;
-        background-image: url('../img/banerimg.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-top: -700px;
-        width: 100%;
-        margin-left: 438px;
-        z-index: 1;
+    &__title {
+        margin-top: 38px;
+        font-weight: 800;
+        font-size: 64px;
+        color: #FFFFFF;
+        margin-left: 0;
+    }
+    &__items {
+        display: flex;
+        margin-top: 110px;
+        width: 94%;
+
+        :hover {
+            background: #FFFFFF;
+            color: #000000;
+            transition: 0.5s all;
+        }
+
+        :first-child {
+            margin-right: 19px;
+        }
+
+        :nth-child(2) {
+            margin: 0px 19px;
+        }
+
+        :last-child {
+            margin-left: 19px;
+        }
+
+        &_item {
+            background: #000000;
+            border-radius: 12px;
+            height: 140px;
+            padding: 18px 20px 22px 22px;
+            color: #FFFFFF;
+            transition: 0.8s all;
+
+            &-title {
+                font-weight: 800;
+                font-size: 24px;
+                margin: 0 !important;
+
+                @media screen and(max-width:1400px) {
+                    font-size: 20px;
+                }
+
+                @media screen and(max-width:1200px) {
+                    font-size: 16px;
+                }
+            }
+
+            &-subtitle {
+                font-weight: 400;
+                font-size: 16px;
+                margin: 18px 0 0 0 !important;
+            }
+
+            &-img {
+                height: 14px;
+                width: 14px;
+                margin: 0 !important;
+            }
+        }
+
+    }
+    @media screen and(max-width:1400px) {
+        &__title {
+            font-size: 44px;
+        }
+
+        &__items {
+            margin-top: 150px;
+        }
+    }
+
+    @media screen and(max-width:1200px) {
+        &__items {
+            width: 92%;
+        }
+    }
+
+    @media screen and(max-width:992px) {
+        &__title {
+            font-size: 36px;
+        }
+
+        &__items {
+            margin-top: 135px;
+            width: 90%;
+
+            &_item {
+                height: 180px;
+            }
+        }
+    }
+
+    @media screen and(max-width:767px) {
+
+        & {
+            background:  #172555;
+            height: 555px;
+            border-radius: 12px;
+            margin-top: 750px;
+            padding: 0;
+
+            &__title {
+                margin-top: 18px;
+            }
+
+            &__subtitle {
+                margin: -100px 0 0 0;
+            }
+
+            &__items {
+                display: flex;
+                flex-direction: column;
+                margin-top: 38px;
+                width: 100%;
+
+                :hover {
+                    background: #774FA4;
+                    color: #FFFFFF;
+                    ;
+                    transition: 0.5s all;
+                }
+
+                :first-child {
+                    margin-right: 0px;
+                    margin-bottom: 10px;
+                }
+
+                :nth-child(2) {
+                    margin: 0px 0px 10px;
+                }
+
+                :last-child {
+                    margin-left: 0px;
+                }
+
+                &_item {
+                    background: #FFFFFF;
+                    color: #1E3173;
+                    height: 130px;
+
+                    &-title {
+                        font-size: 20px;
+                    }
+
+                    &-subtitle {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
     }
 }

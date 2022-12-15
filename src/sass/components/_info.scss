@@ -121,17 +121,18 @@
 
         & {
             background: #1E3173;
-            height: 555px;
+            height: 570px;
             border-radius: 12px;
-            margin-top: -40px;
-            padding: 0;
+            margin-top: 0px;
+            padding: 0px 25px;
 
             &__title {
                 margin-top: 18px;
             }
 
             &__subtitle {
-                margin: -100px 0 0 0;
+                margin: -40px 0px 0px 0px;
+                padding-top: 18px;
             }
 
             &__items {
@@ -177,19 +178,9 @@
         }
 
     }
-}
-
-@media screen and(max-width:767px) {
-    .size {
-        background-color: #1E3173;
-        margin-top: 80px;
-        height: 580px;
-        border-radius: 12px;
-    }
-}
-
-@media screen and(max-width:487px) {
-    .size {
-        height: 605px;
+    @media screen and(max-width:536px) {
+        & {
+            height: 605px;
+        }
     }
 }
