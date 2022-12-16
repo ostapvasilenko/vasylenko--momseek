@@ -8,6 +8,8 @@ a {
     align-items: center;
     position: fixed;
     width: 100%;
+    z-index: 99999;
+    background: linear-gradient(102.5deg, #FFF6DA 0%, #FFDEF2 100%);
 
 
     &__logo {
