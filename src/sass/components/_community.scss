@@ -30,13 +30,27 @@
         font-size: 16px;
         color: #000000;
         margin-top: 30px;
+
+        &_next {
+            font-weight: 500;
+            font-size: 16px;
+            color: #000000;
+            margin-top: 70px;
+        }
+        &_last{
+            font-weight: 500;
+            font-size: 16px;
+            color: #000000;
+            margin-top: 70px;
+        }
     }
 
-    &__block{ 
-        :nth-child(odd){
-         margin-top: 44px;
+    &__block {
+        :nth-child(odd) {
+            margin-top: 44px;
         }
-        :first-child{
+
+        :first-child {
             margin-top: 24px;
         }
 
@@ -44,15 +58,57 @@
             font-weight: 400;
             font-size: 14px;
             color: #000000;
-             margin-top: 24px;
-             margin-bottom: 6px;
+            margin-top: 24px;
+            margin-bottom: 6px;
         }
 
-         &_questions {
+        &_questions {
             font-weight: 600;
             font-size: 22px;
             color: #1E3173;
         }
 
+    }
+
+    &__img {
+        height: 40px;
+        width: 40px;
+        background-image: url('../img/comimgfirst.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+
+        &_last{
+            height: 40px;
+        width: 40px;
+        background-image: url('../img/comimglast.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        }
+    }
+
+    &__name {
+        font-weight: 800;
+        font-size: 16px;
+        color: #1E3173;
+        margin-left: 20px;
+        margin-right: 12px;
+    }
+
+    &__status {
+        font-weight: 500;
+        font-size: 16px;
+        color: #000000;
+        margin-right: 18px;
+    }
+
+    &__advice {
+        font-weight: 500;
+        font-size: 16px;
+        text-decoration-line: underline;
+        color: #000000;
     }
 }
