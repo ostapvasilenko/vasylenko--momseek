@@ -139,6 +139,10 @@
             margin-top: 4px;
         }
     }
+    &__size{
+        display: flex;
+        margin-top: 36px;
+    }
 
     @media screen and(max-width:1400px) {
         &__status{
@@ -159,6 +163,45 @@
         }
         &__title{
             margin-top: 50px;
+        }
+        &__block{
+            :nth-child(3){
+                display: none;
+            }
+            :nth-child(4){
+                display: none;
+            }
+            :nth-child(5){
+                display: none;
+            }
+            :nth-child(6){
+                display: none;
+            }
+            :nth-child(7){
+                display: none;
+            }
+            :nth-child(8){
+                display: none;
+            }
+            :nth-child(11){
+                display: none;
+            }
+            :nth-child(12){
+                display: none;
+            }
+        }
+        &__size{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__status{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__advice{
+            margin-left: 55px;
+            margin-top: -20px;
+            font-size: 12px;
         }
     }
 }
