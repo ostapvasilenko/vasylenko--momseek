@@ -1,23 +1,16 @@
 .blog {
     margin-top: 650px;
     width: 100%;
-    height: 750px;
+    padding: 64px 0px 50px 0px;
     background: linear-gradient(102.5deg, #FFF6DA 0%, #FFDEF2 100%);
 
     &__title {
         font-weight: 700;
         font-size: 48px;
         color: #000000;
-        margin-top: 64px;
-    }
-
-    &_iidd {
-        display: flex;
-        justify-content: space-between;
     }
 
     &__stroke {
-        margin-top: 64px;
         margin-left: 20px;
     }
 
@@ -64,10 +57,32 @@
     &__card {
         margin-top: 50px;
 
-        &_img {
+        &_imgfirst {
             width: 100%;
             height: 256px;
             border-radius: 12px;
+            background-image: url('../img/blogphoto1.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &_imgnext {
+            width: 100%;
+            height: 256px;
+            border-radius: 12px;
+            background-image: url('../img/blogphoto2.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &_imglast {
+            width: 100%;
+            height: 256px;
+            border-radius: 12px;
+            background-image: url('../img/blogphoto3.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         &_title {
@@ -109,6 +124,49 @@
         &_img {
             margin-left: 12px;
             margin-top: 2px;
+        }
+    }
+    @media screen and(max-width: 992px) {
+        &__stroke {
+            display: none;
+        }
+        &__card{
+            &_imgfirst{
+                height: 400px;
+            }
+            &_imgnext{
+                height: 400px;
+            }
+            &_imglast{
+                height: 400px;
+            }
+        }
+    }
+    @media screen and(max-width: 576px) {
+        &__card{
+            &_imgfirst{
+                height: 300px;
+            }
+            &_imgnext{
+                height: 300px;
+                min-width: 100%;
+            }
+            &_imglast{
+                height: 300px;
+            }
+        }
+    }
+    @media screen and(max-width: 415px) {
+        &__button{
+            padding: 16px 70px; 
+        }
+        &__tabs{
+            :first-child{
+                margin-right: 20px;
+            }
+            :nth-child(2){
+                margin-right: 20px;
+            }
         }
     }
 }
